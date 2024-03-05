@@ -12,78 +12,96 @@
             <p>Toda a loja com até 50%OFF</p>
         </div>
         <div id="logo">
-            <p>FS</p>
+            <a href="#"><img src="imagens/logo-original.png" alt="Logomarca da ferragem sertorio"></a>
         </div>
         <div id="login">
-            <p>Login</p>
+            <a href="#">Login</a>
         </div>
         <div id="imagem">
-            <h1>Banner Principal</h1>
         </div>
     </header>
     <nav>
-        <p id="menu"><strong>Menu</strong></p>
+        <a href="#">Menu</a>
+        <a href="#">Produtos</a>
         <a href="#">Quem Somos</a>
-        <a href="#">Trabalhe Conosco</a>
         <a href="#">Contato</a>
-            <ul id="categorias">
-                <li><a href="#">Tintas</a></li>
-                <li><a href="#">Bandeijas</a></li>
-                <li><a href="#">Rolos e Pinceis</a></li>
-            </ul>
     </nav>
-    <body>
-        <main>
-            <section>
-                <div>
-                    banner 1
-                </div>
-                <div>
-                    banner 2
-                </div>
-                <div>
-                    banner 3
-                </div>
-            </section>
-            <section>
-                <p>Produtos</p>
-                <div>
-                    Produto 1
-                </div>
-                <div>
-                    Produto 2
-                </div>
-                <div>
-                    Produto 3
-                </div>
-                <div>
-                    Produto 4
-                </div>
-            </section>
-        </main>
-    </body>
-    <footer>
-        <div>
-            <ul>
-                <li>Categorias</li>
-                    <ul>
-                        <li>Tintas</li>
-                        <li>Bandeijas</li>
-                        <li>Rolos e Pinceis</li>
-                    </ul>
-                <li>Segurança</li>
-                <ul>
-                    <li>Politicas de cookies</li>
-                    <li>Politicas de Privacidade</li>
-                </ul>
-                <li>Rastreamento</li>
-                    <ul>
-                        <li>Correios</li>
-                    </ul>
-            </ul>
-        </div>
-        formas de pagamento:
-        <p>desenvolvido por:</p>
-    </footer>
+    <main>
+        <section id="banners">
+            <div class="banner">
+                <h2>Agora sua casa,<br>com mais qualidade!</h2>
+                <p>Tintas Suvinil</p>  
+            </div>
+            <input id="conhecer" type="button" value="CONHECER" onclick="conhecer()">
+        </section>
+        <section id="produtos">
+            <div>
+                <p>Mais Vendidos</p>
+            </div>
+            <div class="produto">
+                <table id="tab">
+                    <tr> <!--Produto 1-->
+                        <td>
+                            <img src="imagens/lata-tinta-3l-suvinil-edit.jpg" alt="">
+                        </td>
+                        <td colspan="2">
+                            <p class="destaque">Lata de tinta 3.6L Suvinil</p>
+                            <p class="legenda">Toque de seda</p>
+                            <hr>
+                            <p class="preco-antigo">de: <del>$340,00</del></p>
+                            <p class="novo-preco">por: R$280,00</p>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr> <!--Produto 2-->
+                        <td>
+                            <img src="imagens/lata-tinta-3l-suvinil-2-edit.jpg" alt="">
+                        </td>
+                        <td colspan="2">
+                            <p class="destaque">Lata de tinta 3.6L Suvinil</p>
+                            <p class="legenda">Fosco completo</p>
+                            <hr>
+                            <p class="preco-antigo">de: <del>$340,00</del></p>
+                            <p class="novo-preco">por: R$280,00</p>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr> <!--Produto 3-->
+                        <td>
+                            <img src="imagens/lata-tinta-3l-suvinil-3-edit.jpg" alt="">
+                        </td>
+                        <td colspan="2">
+                            <p class="destaque">Lata de tinta 3.6L Suvinil</p>
+                            <p class="legenda">Fosco completo</p>
+                            <hr>
+                            <p class="preco-antigo">de: <del>$340,00</del></p>
+                            <p class="novo-preco">por: R$280,00</p>
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="cadastros">
+            <div>
+                <p>
+                    <label for="cadastro">Novo Cadastro: </label>
+                </p>
+                <p>
+                    Sejá o primeiro a receber, todas as nossas novidades e promoções.
+                </p>
+                <p>
+                    <input type="email" name="cadastro" id="cadastro" placeholder="Seu melhor e-mail">
+                <input type="submit" value="Cadastrar">
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
