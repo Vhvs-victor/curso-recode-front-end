@@ -1,0 +1,23 @@
+{
+    "loja" : "Ferragem Sertorio",
+    "site" : "loja-fs.com.br",
+    "email" : "contato@ferragemsertorio.com.br",
+    "telefones" : [
+        {
+            "contato" : "Luana",
+            "numero" : "(51)98168-5977"
+        },
+        {
+            "contato" : "Victor",
+            "numero" : "(51)98168-5977"
+        }
+    ],
+    "salarios" : [
+        {
+            "salario" : "R$3.680,00"
+        },
+        {
+            "salario" : "R$4.320,00"
+        }
+    ]
+}

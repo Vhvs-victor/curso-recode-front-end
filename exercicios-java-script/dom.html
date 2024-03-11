@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Aprendendo sobre DOM (Document Object Model)</h1>
+    <h2>Window</h2>
+    <p>
+        <ul>
+            <li>window.open (Abrir uma pagina do navegador);</li> <br>
+            <li>window.close (Fechar uma janela);</li> <br>
+            <li>window.location (Definir qual site sera acessado);</li>
+        </ul>
+    </p>
+    <h2>Document</h2>
+    <p>
+        <strong>Document</strong>: representa todo documento HTML e seus metodos e atributos. Pelo document, podemos acessar elementos especificos usando <strong>ID, NAME, TAG, CLASS</strong>. <br>
+        <ul>
+            <li>getElementById('');</li>
+            <li>getElementsByName('');</li>
+            <li>getElementsByTagName('');</li>
+            <li>getElementsByTagClassName('');</li>
+        </ul>
+    </p>
+    <p>
+        <ul>
+            <li>Acessar o <strong>titulo</strong> do documento (document.title);</li>
+            <li>Acessar o <strong>URL</strong> do documento (document.url);</li>
+        </ul>
+    </p>
+    <p>
+        Criar um <strong>elemento HTML</strong> pelo <strong>Java Script</strong> (document.createElement); <br>
+        # O object element, representa elementos HTML, tais como: &lt;body&gt;, &lt;div&gt; ,&lt;h1&gt;, &lt;p&gt; e muitos outros.
+        <ul>
+            <li>Modificar sua classe CSS(elemento.className);</li>
+            <li>Modificar o conteudo(elemento.innerHTML); ou (document.outerHTML);</li>
+            <li>Saber quem são os elementos filho(document.children);</li>
+            <li>Ter acesso aos seus atributos(document.attributes);</li>
+        </ul>  
+    </p>
+    <p>
+        <ul>
+            <li>window.innerWidth</li>
+            <legend>Tamanho interno da janela do navegador</legend>
+            <li>screen.width</li>
+            <legend>Tamanho da resolução da tela do monitor</legend>
+            <li>window.onrezi</li>
+            <legend>Evento de redimencionamento da janela do navegador</legend>
+            <li>window.scroll(eixo x/horizontal, eixo y/vertical)</li>
+            <legend>window.scroll(0,window.innerWidth</legend>
+            <legend>Rolagem automatica no eixo y, enquanto redimencionar a janela do navegador, sem rolagem no eixo x, 0.</legend>
+            <li>document.write</li>
+            <legend>Substitui todo documento HTML pelo texto de referencia do document.write('Olá, Mundo!');</legend>
+        </ul>
+    </p>
+    <h2 id="tit" onclick="clicar()" onmouseout="sair()" style="cursor: pointer;">Eventos em DOM</h2>
+        <p><strong>Eventos</strong>: São gatilhos que são disparados sempre que algo acotecer conforme a interação do usuario.</p>
+        <li><strong>ONCLICK</strong>: no clique, quando o usuairio clica em determinado elemento.</li>
+        <li><strong>ONMOVEMOUSE</strong>: Quando o usuario move o mouse por cima de um determinado elemento.</li>
+        <li><strong>ONCHANGE</strong>: É disparado quando um elemento HTML é alterado.</li>
+        <li><strong>ONMOVEOUT</strong>: Quando o usuario move o mouse para fora do elemento.</li>
+        <li><strong>ONKEYDOWN</strong>: Quando o usuario pressiona alguma tecla do teclado.</li>
+        <li><strong>ONLOAD</strong>: Quando o navegador termina de carregar a pagina</li>
+
+        <script>
+            window.innerWidth
+            function clicar(){
+                let res = document.getElementById('tit');
+                res.innerHTML = `Clicou`
+            }
+            function sair(){
+                let res = document.getElementById('tit');
+                res.innerHTML = `Eventos em Dom`
+            }
+        </script>
+</body>
+</html>
